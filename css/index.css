@@ -1,0 +1,212 @@
+body{
+	background: #fff;
+    color: #333;
+    font-size: 10px;
+    width: 100%;
+    position: relative;
+    background: #ee2e56 url(../img/bodybg.jpg) no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 10%;
+}
+/*P1页面*/
+.page{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+.w100p{
+	width: 100%;
+}
+.p1-bar {
+    text-align: center;
+    margin: 5% 0;
+    font-size: 1.6rem;
+    color: #fff;
+}
+/*萌妹子*/
+.girlTypes-wrap, .girlTypes-wrap2 {
+    font-size: 0;
+    margin: 0 2%;
+}
+.displayIblock {
+    display: inline-block;
+}
+.girlType {
+    width: 30%;
+    margin-left: 2.5%;
+}
+.girlType-hint {
+    font-size: 1.6rem;
+    /* color: #fdb504; */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 0rem;
+}
+/*女屌丝*/
+.girlTypes-wrap2 .girlType:first-child {
+    margin-left: 18.5%;
+}
+/*p2页面*/
+.floatL{
+    float: left;
+}
+.displayblock {
+    display: block;
+}
+/*.displayTable {
+    display: table;
+}*/
+.p2-bar {
+    text-align: center;
+    position: relative;
+    margin: 2% auto 5%;
+}
+.mancard {
+    width: 24%;
+    margin-right: 5%;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.mancard-hint {
+    position: absolute;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    color: #e8c66f;
+}
+.cards-wrap .mancard:first-child {
+    margin-left: 23.5%;
+}
+.displayTableCell {
+   position: absolute;            
+    top:50%;            
+    left:50%;            
+    width:100%;            
+    transform:translate(-50%,-50%);            
+    text-align: center;    
+    font-size: 1.6rem;
+}
+.cards-wrap,
+.cards-wrap2 {
+    overflow: auto;
+    margin: 5% 2%;
+}
+.cards-wrap2 .mancard:first-child {
+    margin-left: 9%;
+}
+.flip .card-front {
+    z-index: 20;
+    transform: rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+}
+.card-heart {
+    position: absolute;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+}
+/*翻转*/
+.card-front {
+    position: relative;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    backface-visibility: hidden;
+    z-index: 21;
+}
+.card-back {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transform: rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: #ee2e5a;
+}
+.flip .card-front {
+    z-index: 20;
+    transform: rotate3d(0, 1, 0, -180deg);
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+}
+.flip .card-back {
+    z-index: 21;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+}
+/*p3页面*/
+.w50p{
+	width: 50%;
+}
+.p3 .center {
+    margin: 0 auto;
+}
+.man-img-holder {
+    position: relative;
+}
+img{
+	display: block;
+}
+.retry {
+    position: absolute;
+    right: 0%;
+    bottom: 3rem;
+    width: 25%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #a81032;
+}
+.retry-sign {
+    width: 2rem;
+    margin: 0 auto;
+}
+.w80p {
+    width: 80%;
+}
+.btns-wrap {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+}
+.btns-wrap p{
+    font-size: 1.4rem;
+}
+.btns-wrap img {
+    margin: 5% 0 0;
+}
+/*遮盖层*/
+.popup-share{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 10% 0;
+    background: #000;
+    opacity: 0.8;
+}
+.popup-share img{
+    width: 100%;
+}
